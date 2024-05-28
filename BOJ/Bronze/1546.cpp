@@ -1,3 +1,6 @@
+// 1546. 평균
+// https://www.acmicpc.net/problem/1546
+
 #include <iostream>
 
 using namespace std;
