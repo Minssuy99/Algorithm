@@ -1,3 +1,6 @@
+// 2420. 사파리월드
+// https://www.acmicpc.net/problem/2420
+
 #include <iostream>
 
 using namespace std;
