@@ -14,5 +14,11 @@ int main()
 
     cout << S[i - 1] << endl;
 
+    cout << fixed;
+    cout.precision(2);
+    cout << 1.23 << endl;
+    cout << 4.0 << endl;
+    cout << 4 << endl;
+
     return 0;
 }
