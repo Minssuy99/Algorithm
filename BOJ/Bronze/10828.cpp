@@ -28,7 +28,7 @@ int main() {
         if (command == "push")
         {
             int value;
-            ss >> value;    // 두번째 문자열인 숫자 할당
+            ss >> value;    // 두번째 문자열인 숫자를 할당
             st.push(value);
 
         }
