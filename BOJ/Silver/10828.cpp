@@ -5,7 +5,7 @@
 #include <stack>
 #include <sstream>
 
-using namespace std;
+using namespace std;  
 
 int main() {
     int n;
@@ -64,7 +64,14 @@ int main() {
         // empty command
         else if (command == "empty")
         {
-            cout << (st.empty() ? "1" : "0") << endl;
+            if (st.empty() == true)
+            {
+                cout << "1" << endl;
+            }
+            else
+            {
+                cout << "0" << endl;
+            }
         }
     }
 
