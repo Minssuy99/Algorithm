@@ -9,7 +9,7 @@ int main()
 {
     int n;
 
-
+    // 소수찾기
     
 
     return 0;
