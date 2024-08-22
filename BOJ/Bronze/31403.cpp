@@ -1,5 +1,5 @@
 /// 31403. A + B - C
-// https://www.acmicpc.net/problem/
+// https://www.acmicpc.net/problem/31403
 
 #include <iostream>
 
