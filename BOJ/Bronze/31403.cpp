@@ -2,6 +2,7 @@
 // https://www.acmicpc.net/problem/31403
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
