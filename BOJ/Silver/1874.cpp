@@ -12,7 +12,7 @@ int main()
     ios::sync_with_stdio(false);
     cin.tie(0);
 
-    int seq[1000001];
+    int seq[100001];
     string result;
 
     stack<int> st;
