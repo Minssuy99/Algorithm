@@ -2,18 +2,19 @@
 // https://www.acmicpc.net/problem/1064
 
 #include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <iomanip>
 
 using namespace std;
 
+struct Point
+{
+    double x, y;
+};
+
 int main()
 {
-    int Ax,Ay,Bx,By,Cx,Cy;
 
-    double case_A, case_B, case_C;
 
-    cin >> Ax >> Ay >> Bx >> By >> Cx >> Cy;
-
-    case_A = 
-
-    return 0;
 }
