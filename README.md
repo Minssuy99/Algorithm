@@ -8,8 +8,8 @@
 ## :writing_hand: Commit Convention Rule
 
 ```bash
-Year-Month-Day [Directory/Filename] Add/Fix/Update/Move > Info
+Year-Month-Day [Number : Title] Add/Fix/Update/Move > Info
 
-ex) 2024-04-26 [./README] Add > README.md File
-ex) 2024-04-26 [C++/Interface] Update > 각주를 추가했습니다.
+ex) 2024-04-26 [1000 : A + B] Add > 1000.cpp
+ex) 2024-04-26 [C++/Interface] Update > comments
 ```
