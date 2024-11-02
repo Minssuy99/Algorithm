@@ -1,5 +1,5 @@
-// .
-// https://www.acmicpc.net/problem/
+// 2747. 피보나치 수
+// https://www.acmicpc.net/problem/피보나치 수
 
 #include <bits/stdc++.h>
 
