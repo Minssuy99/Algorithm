@@ -37,8 +37,8 @@ int main()
         dic.push_back(word);
     }
 
-    sort(dic.begin(), dic.end(), compareStrings);
-    dic.erase(unique(dic.begin(), dic.end()), dic.end());
+    sort(dic.begin(), dic.end(), compareStrings);         // compare 다시 알아보기
+    dic.erase(unique(dic.begin(), dic.end()), dic.end()); // erase + unique 알아보기
 
     for (const auto &word : dic)
     {
