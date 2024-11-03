@@ -11,7 +11,7 @@ int main()
     cin.tie(0);
 
     int n = 3;
-    int arr[n];
+    int arr[3];
 
     for (int i = 0; i < n; i++)
     {
