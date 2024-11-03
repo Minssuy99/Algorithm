@@ -1,47 +1,43 @@
 // 1546. 평균
 // https://www.acmicpc.net/problem/1546
 
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
+int n;
+double addtest = 0;
+vector<double> test;
+
+double cal(double a)
+{
+    return a / test[0] * 100;
+}
+
 int main()
-    {
-    const int MAX_SIZE = 1000;
-    int n = 0;
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
 
     cin >> n;
 
-    if (n <= MAX_SIZE) {
-        double* subject = new double[n];
+    for (int i = 0; i < n; i++)
+    {
+        double num;
 
-        for (int i = 0; i < n; ++i) {
-            cin >> subject[i];
-        }
+        cin >> num;
 
-        double m = subject[0];
-
-        for (int i = 1; i < n; ++i) {
-            if (subject[i] > m) {
-                m = subject[i];
-            }
-        }
-
-        for (int i = 0; i < n; ++i) {
-            double result = subject[i] / m * 100;
-            subject[i] = result;
-        }
-
-        double allSubject = 0;
-
-        for (int i = 0; i < n; ++i) {
-            allSubject += subject[i];
-        }
-
-        double average = allSubject / n;
-
-        cout <<average << endl;
+        test.push_back(num);
     }
+
+    sort(test.rbegin(), test.rend());
+
+    for (int i = 0; i < n; i++)
+    {
+        addtest += cal(test[i]);
+    }
+
+    cout << addtest / n << '\n';
 
     return 0;
 }
