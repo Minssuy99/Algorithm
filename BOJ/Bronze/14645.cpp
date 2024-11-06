@@ -1,4 +1,4 @@
-// 14645. 와이버스 부릉부릉
+// 14645.와이버스 부릉부릉
 // https://www.acmicpc.net/problem/14645
 
 #include <bits/stdc++.h>
