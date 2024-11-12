@@ -4,7 +4,6 @@
 #include <iostream>
 #include <stack>
 
-
 using namespace std;
 
 int main()
@@ -23,18 +22,18 @@ int main()
 
     cin >> n;
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         cin >> num;
         seq[i] = num;
     }
 
-    for(int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
         st.push(i);
         result += "+\n";
 
-        while(!st.empty() && seq[index] == st.top())
+        while (!st.empty() && seq[index] == st.top())
         {
             st.pop();
             result += "-\n";
@@ -42,7 +41,7 @@ int main()
         }
     }
 
-    if(st.empty())
+    if (st.empty())
     {
         cout << result;
     }
@@ -50,5 +49,4 @@ int main()
     {
         cout << "NO\n";
     }
-
 }
