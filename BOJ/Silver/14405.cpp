@@ -12,11 +12,11 @@ int main()
 
     cin >> s;
 
-    for(int i = 0; i < s.length(); i++)
+    for (int i = 0; i < s.length(); i++)
     {
-        if(s[i] == 'p')
+        if (s[i] == 'p')
         {
-            if(s[i+1] == 'i')
+            if (s[i + 1] == 'i')
             {
                 isTrue = true;
                 i += 1;
@@ -27,9 +27,9 @@ int main()
                 break;
             }
         }
-        else if(s[i] == 'k')
+        else if (s[i] == 'k')
         {
-            if(s[i+1] == 'a')
+            if (s[i + 1] == 'a')
             {
                 isTrue = true;
                 i += 1;
@@ -40,9 +40,9 @@ int main()
                 break;
             }
         }
-        else if(s[i] == 'c')
+        else if (s[i] == 'c')
         {
-            if(s[i+1] == 'h' && s[i+2] == 'u')
+            if (s[i + 1] == 'h' && s[i + 2] == 'u')
             {
                 isTrue = true;
                 i += 2;
@@ -60,7 +60,7 @@ int main()
         }
     }
 
-    if(isTrue == true)
+    if (isTrue == true)
     {
         cout << "YES" << endl;
     }
