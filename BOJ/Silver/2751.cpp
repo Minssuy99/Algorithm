@@ -1,5 +1,5 @@
-// 10989. 수 정렬하기3
-// https://www.acmicpc.net/problem/10989
+// 2751. 수 정렬하기 2
+// https://www.acmicpc.net/problem/2751
 
 #include <bits/stdc++.h>
 
