@@ -2,12 +2,13 @@
 // https://www.acmicpc.net/problem/10828
 
 #include <iostream>
-#include <stack>
 #include <sstream>
+#include <stack>
 
-using namespace std;  
+using namespace std;
 
-int main() {
+int main()
+{
     int n;
     stack<int> st;
 
@@ -28,17 +29,19 @@ int main() {
         if (command == "push")
         {
             int value;
-            ss >> value;    // 두번째 문자열인 숫자를 할당
+            ss >> value; // 두번째 문자열인 숫자를 할당
             st.push(value);
-
         }
 
         // top command
         else if (command == "top")
         {
-            if (!st.empty()) {
+            if (!st.empty())
+            {
                 cout << st.top() << endl;
-            } else {
+            }
+            else
+            {
                 cout << "-1" << endl;
             }
         }
@@ -46,11 +49,14 @@ int main() {
         // pop command
         else if (command == "pop")
         {
-            if (!st.empty()) {
+            if (!st.empty())
+            {
                 int popNum = st.top();
                 st.pop();
                 cout << popNum << endl;
-            } else {
+            }
+            else
+            {
                 cout << "-1" << endl;
             }
         }
