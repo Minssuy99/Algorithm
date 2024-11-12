@@ -19,18 +19,18 @@ int main()
         string s;
 
         cin >> s;
-        
+
         for (int j = 0; j < s.length(); j++)
         {
             if (s[j] == '(')
             {
-                st.push('(');   // ( 라면 집어넣고
+                st.push('('); // ( 라면 집어넣고
             }
             else
             {
                 if (!st.empty() == true)
                 {
-                    st.pop();  // 다른놈이 들어오면 꺼내기
+                    st.pop(); // 다른놈이 들어오면 꺼내기
                 }
                 else
                 {
@@ -41,7 +41,7 @@ int main()
         }
         if (st.empty() == true && check == true)
         {
-            cout << "YES" << endl;  // 스택 다 비웠고 check가 참이라면
+            cout << "YES" << endl; // 스택 다 비웠고 check가 참이라면
         }
         else
         {
@@ -49,7 +49,6 @@ int main()
         }
     }
 }
-
 
 /********USE Function************
 
