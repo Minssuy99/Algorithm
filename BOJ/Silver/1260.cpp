@@ -1,3 +1,6 @@
+// 1260. BFS 와 DFS
+// https://www.acmicpc.net/problem/1260
+
 #include <bits/stdc++.h>
 
 using namespace std;
