@@ -13,7 +13,7 @@ void print(vector<int> b)
 
 void combination(int start, vector<int> b)
 {
-    if (b.size() == k)
+    if (b.size() == k) // 기저사례
     {
         print(b);
         return;
@@ -22,7 +22,7 @@ void combination(int start, vector<int> b)
     {
         b.push_back(i);
         combination(i, b);
-        b.pop_back();
+        b.pop_back(); // 원복
     }
     return;
 }

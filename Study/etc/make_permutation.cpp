@@ -1,39 +1,78 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> vec;
-
-void printV(vector<int> &vec)
+void print(vector<int> &vec)
 {
     for (int i = 0; i < vec.size(); i++)
     {
         cout << vec[i] << " ";
     }
-    cout << '\n';
+    cout << "\n";
 }
 
-void makePermutation(int n, int r, int depth)
+void makePermutation(int n, int r, int depth, vector<int> &vec)
 {
-    cout << n << " : " << r << " : " << depth << '\n';
     if (r == depth)
     {
-        printV(vec);
+        print(vec);
         return;
     }
+
     for (int i = depth; i < n; i++)
     {
+        cout << i << " : " << depth << " changed\n";
         swap(vec[i], vec[depth]);
-        makePermutation(n, r, depth + 1);
+        makePermutation(n, r, depth + 1, vec);
+        cout << i << " : " << depth << " re changed\n";
         swap(vec[i], vec[depth]);
     }
+    return;
 }
 
 int main()
 {
-    for (int i = 1; i <= 3; i++)
-    {
-        vec.push_back(i);
-    }
-    makePermutation(3, 3, 0);
+    vector<int> vec = {1, 2, 3};
+    makePermutation(3, 3, 0, vec);
+
     return 0;
 }
+
+/*
+0 : 0 changed
+1 : 1 changed
+2 : 2 changed
+1 2 3
+2 : 2 re changed
+1 : 1 re changed
+2 : 1 changed
+2 : 2 changed
+1 3 2
+2 : 2 re changed
+2 : 1 re changed
+0 : 0 re changed
+1 : 0 changed
+1 : 1 changed
+2 : 2 changed
+2 1 3
+2 : 2 re changed
+1 : 1 re changed
+2 : 1 changed
+2 : 2 changed
+2 3 1
+2 : 2 re changed
+2 : 1 re changed
+1 : 0 re changed
+2 : 0 changed
+1 : 1 changed
+2 : 2 changed
+3 2 1
+2 : 2 re changed
+1 : 1 re changed
+2 : 1 changed
+2 : 2 changed
+3 1 2
+2 : 2 re changed
+2 : 1 re changed
+2 : 0 re changed
+
+*/
