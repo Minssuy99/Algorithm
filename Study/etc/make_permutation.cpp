@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 void print(vector<int> &vec)
@@ -12,7 +13,7 @@ void print(vector<int> &vec)
 
 void makePermutation(int n, int r, int depth, vector<int> &vec)
 {
-    if (r == depth)
+    if (r == depth) // base case
     {
         print(vec);
         return;
@@ -20,10 +21,13 @@ void makePermutation(int n, int r, int depth, vector<int> &vec)
 
     for (int i = depth; i < n; i++)
     {
-        cout << i << " : " << depth << " changed\n";
+        cout << "[Current state : " << "i = " << i << "depth = " << depth << "]\n";
+
+        cout << "Swap " << i << " and " << depth << ".\n"; // debug code
         swap(vec[i], vec[depth]);
         makePermutation(n, r, depth + 1, vec);
-        cout << i << " : " << depth << " re changed\n";
+
+        cout << "Swap " << i << " and " << depth << " back.\n"; // debug code
         swap(vec[i], vec[depth]);
     }
     return;
@@ -38,6 +42,7 @@ int main()
 }
 
 /*
+
 0 : 0 changed
 1 : 1 changed
 2 : 2 changed
